@@ -37,3 +37,44 @@ body {
     margin-top: 80px;
   }
   
+  @media (min-width: 1200px) {
+    body {
+      text-align: center;
+      /* font-size: 2rem; */
+      background-color: #FBF8F1;
+      font-family: 'Bai Jamjuree', sans-serif;
+    }
+    
+    p{
+      font-size: 50px;
+      margin: 0;
+    }
+  
+    .detajet{
+        font-size: 22px;
+    }
+    
+    span#iftariSot{
+        font-size: 25px;
+        font-weight: 600;
+    }
+  
+    .countdown{
+      padding: 50px 0;
+    }
+    
+    
+    h4 {
+      margin: 150px 0px 15px;
+      font-weight: 500;
+      color: #BF9270;
+    }
+    
+    footer{
+      padding: 80px 0px;
+      font-size: 20px;
+      background-color: white;
+      margin-top: 80px;
+    }
+
+  }

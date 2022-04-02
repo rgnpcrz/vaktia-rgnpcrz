@@ -1,21 +1,24 @@
-//var now = new Date().getTime;
+var now = new Date();
+var day = now.getDay();
+var countDownDate = new Date();
 
+console.log("now: " +day +" & cntDwn: "+countDownDate);
 
 // Set the date we're counting down to
-var countDownDate = new Date("April 4, 2022 20:57:00").getTime();
+//var countDownDate = new Date("April 4, 2022 20:57:00").getTime();
 //console.log(countDownDate);
 
 var iftari2  = new Date(2022, 4, 3, 19, 12, 00);
-var iftari3  = new Date(2022, 4, 3, 19, 13, 00);
-var iftari4  = new Date(2022, 4, 3, 19, 14, 00);
-var iftari5  = new Date(2022, 4, 3, 19, 15, 00);
-var iftari6  = new Date(2022, 4, 3, 19, 16, 00);
-var iftari7  = new Date(2022, 4, 3, 19, 17, 00);
-var iftari8  = new Date(2022, 4, 3, 19, 18, 00);
-var iftari9  = new Date(2022, 4, 3, 19, 20, 00);
-var iftari10 = new Date(2022, 4, 3, 19, 21, 00);
-var iftari11 = new Date(2022, 4, 3, 19, 22, 00);
-var iftari12 = new Date(2022, 4, 3, 19, 23, 00);
+var iftari3  = new Date(2022, 4, 4, 19, 13, 00);
+var iftari4  = new Date(2022, 4, 5, 19, 14, 00);
+var iftari5  = new Date(2022, 4, 6, 19, 15, 00);
+var iftari6  = new Date(2022, 4, 7, 19, 16, 00);
+var iftari7  = new Date(2022, 4, 8, 19, 17, 00);
+var iftari8  = new Date(2022, 4, 9, 19, 18, 00);
+var iftari9  = new Date(2022, 4, 10, 19, 20, 00);
+var iftari10 = new Date(2022, 4, 11, 19, 21, 00);
+var iftari11 = new Date(2022, 4, 12, 19, 22, 00);
+var iftari12 = new Date(2022, 4, 13, 19, 23, 00);
 var iftari13 = new Date("April 14, 2022 19:24:00");
 var iftari14 = new Date("April 15, 2022 19:25:00");
 var iftari15 = new Date("April 16, 2022 19:26:00");
@@ -35,6 +38,16 @@ var iftari28 = new Date("April 29, 2022 19:41:00");
 var iftari29 = new Date("April 30, 2022 19:42:00");
 var iftari30    = new Date("May 1, 2022 19:43:00");
 
+console.log("dita ne databaz: "+ iftari2.getDay());
+
+
+for(let i=2; i<=12; i++){
+  if(this["iftari"+i].getDay() == day){
+    var countDownDate = this["iftari"+i] ;
+    console.log("For loop: "+this["iftari"+i]);
+    break;
+  }
+};
 
 
 
@@ -54,14 +67,8 @@ var x = setInterval(function() {
 
   // Get today's date and time
   var now = new Date();
-  //console.log(now);
+  //console.log(now.getSeconds()); //po punon per merak
 
-  for (let i = 0; i <30; i++) {
-    if (1 > 0) {
-      //console.log(now.getDate);
-
-    }
-  }
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
 
