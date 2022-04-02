@@ -1,13 +1,13 @@
 body {
     text-align: center;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     background-color: #FBF8F1;
     font-family: 'Bai Jamjuree', sans-serif;
   }
   
   p{
     font-size: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 
   .detajet{
