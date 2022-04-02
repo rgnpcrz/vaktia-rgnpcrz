@@ -7,7 +7,7 @@ body {
   
   p{
     font-size: 50px;
-    margin-bottom: 20px;
+    margin: 0;
   }
 
   .detajet{
@@ -17,6 +17,10 @@ body {
   span#iftariSot{
       font-size: 25px;
       font-weight: 600;
+  }
+
+  .countdown{
+    padding: 50px 0;
   }
   
   
