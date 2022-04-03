@@ -1,7 +1,9 @@
 body {
+  margin: 0;
+  padding: 0;
     text-align: center;
     /* font-size: 2rem; */
-    background-color: #FBF8F1;
+    background-color:white;
     font-family: 'Bai Jamjuree', sans-serif;
   }
   
@@ -11,7 +13,8 @@ body {
     justify-content: center;
     min-height: 85vh;
     margin: 0;
-
+    padding: 0;
+    background-color: #FBF8F1;
   }
 
   .containerWrapper{
@@ -29,7 +32,7 @@ body {
     font-size: 20px;
   }
   .edheSa{
-    font-size: 16px;
+    font-size: 30px;
     padding-top: 120px;
     color: #BF9270;
   }
@@ -62,7 +65,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     font-size: 30px;
     background-color: white;
@@ -121,12 +124,18 @@ body {
 
   @media (min-width: 1200px) {
     body {
+      margin: 0;
+      padding: 0;
       text-align: center;
       /* font-size: 2rem; */
-      background-color: #FBF8F1;
+      background-color: white;
       font-family: 'Bai Jamjuree', sans-serif;
     }
-    
+    .container{
+      padding: 0;
+      margin: 0;
+      background-color: #FBF8F1;
+    }
     p{
       font-size: 50px;
       margin: 0;
@@ -162,7 +171,7 @@ body {
       margin: auto;
       height: 10vh;
       width: 100%;
-      font-size: 20px;
+      font-size: 15px;
       background-color: white;
       /* margin-top: 80px;
       min-height: 20vh; */
