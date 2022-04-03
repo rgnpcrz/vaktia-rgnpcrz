@@ -1,4 +1,4 @@
-var now = new Date(2022, 4,  30, 19, 44, 00);
+var now = new Date();
 var day = now.getDate();
 var countDownDate = new Date();
 
@@ -49,11 +49,12 @@ for(var i=2; i<=30; i++){
     document.getElementById("iftariSot").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
     console.log("nowLoop: " + day +" & cntDwn: "+ countDownDate.getDate());
     var mbetja = 30 - i;
+    console.log(i);
     document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
     break;
-  }
+  };
 };
-
+console.log(mbetja);
 
 
 var newLocal = "2";
@@ -92,6 +93,7 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("countDown").innerHTML = "IFTARI";
   }
+  console.log(mbetja+1);
 }, 1000);
 
 
