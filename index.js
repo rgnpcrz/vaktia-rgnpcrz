@@ -93,7 +93,7 @@ var x = setInterval(function() {
 
   // If the count down is finished, write some text
   if (oroq < 0) {
-     clearInterval(x);
+    // clearInterval(x); // kjo po e ndal "loopin"
     document.getElementById("countDown").innerHTML = "IFTARI";
     document.getElementById("ditetEMbetura").innerHTML = mbetja;
   }
