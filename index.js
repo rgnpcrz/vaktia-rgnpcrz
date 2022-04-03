@@ -1,6 +1,9 @@
 var now = new Date();
 var day = now.getDate();
 var countDownDate = new Date();
+var syfyriTemp;
+var iftariTemp;
+var nowTemp;
 
 //Iftari
 var iftari2  = new Date(2022, 3,  3, 19, 12, 00);
@@ -33,27 +36,66 @@ var iftari28 = new Date(2022, 3, 29, 19, 41, 00);
 var iftari29 = new Date(2022, 3, 30, 19, 42, 00);
 var iftari30 = new Date(2022, 4,  1, 19, 44, 00);
 
+
+//syfyri
+var syfyri2  = new Date(2022, 3,  3, 4, 34, 00);
+var syfyri3  = new Date(2022, 3,  4, 4, 32, 00);
+var syfyri4  = new Date(2022, 3,  5, 4, 31, 00);
+var syfyri5  = new Date(2022, 3,  6, 4, 29, 00);
+var syfyri6  = new Date(2022, 3,  7, 4, 27, 00);
+var syfyri7  = new Date(2022, 3,  8, 4, 25, 00);
+var syfyri8  = new Date(2022, 3,  9, 4, 20, 00);
+var syfyri9  = new Date(2022, 3, 10, 4, 18, 00);
+var syfyri10 = new Date(2022, 3, 11, 4, 16, 00);
+var syfyri11 = new Date(2022, 3, 12, 4, 14, 00);
+var syfyri12 = new Date(2022, 3, 13, 4, 12, 00);
+var syfyri13 = new Date(2022, 3, 14, 4, 10, 00);
+var syfyri14 = new Date(2022, 3, 15, 4, 08, 00);
+var syfyri15 = new Date(2022, 3, 16, 4, 06, 00);
+var syfyri16 = new Date(2022, 3, 17, 4, 05, 00);
+var syfyri17 = new Date(2022, 3, 18, 4, 03, 00);
+var syfyri18 = new Date(2022, 3, 19, 4, 01, 00);
+var syfyri19 = new Date(2022, 3, 20, 3, 59, 00);
+var syfyri20 = new Date(2022, 3, 21, 3, 57, 00);
+var syfyri21 = new Date(2022, 3, 22, 3, 55, 00);
+var syfyri22 = new Date(2022, 3, 23, 3, 52, 00);
+var syfyri23 = new Date(2022, 3, 24, 3, 50, 00);
+var syfyri24 = new Date(2022, 3, 25, 3, 47, 00);
+var syfyri25 = new Date(2022, 3, 26, 3, 45, 00);
+var syfyri26 = new Date(2022, 3, 27, 3, 43, 00);
+var syfyri27 = new Date(2022, 3, 28, 3, 41, 00);
+var syfyri28 = new Date(2022, 3, 29, 3, 39, 00);
+var syfyri29 = new Date(2022, 3, 30, 3, 37, 00);
+var syfyri30 = new Date(2022, 4,  1, 3, 35, 00);
+var syfyri31 = new Date(2022, 4,  1, 3, 33, 00);
+
+console.log("Qetash   : " + now.getTime());
+
+
 // console.log("now2: " + day +" & cntDwn: "+ now.getDay());
 // console.log("data ne databaz: "+ iftari9.getDate());
 
 
-for(var i=2; i<=30; i++){
-  if(this["iftari"+i].getDate() == day){
-    var countDownDate = this["iftari"+i] ;
-    //console.log("For loop: "+this["iftari"+i]);
-    document.getElementById("iftariSot").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
-    console.log("nowLoop: " + day +" & cntDwn: "+ countDownDate.getDate());
-    var mbetja = 30 - i;
-    console.log("Iftari: "+this["iftari"+i] );
-    document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
-    break;
-  };
-};
-console.log("ifari: " + countDownDate );
-console.log("now: " + now);
+//console.log("ifari: " + countDownDate );
+//console.log("now: " + now);
 
-var oroq = now.getTime() - countDownDate.getTime();
-console.log("ifari - now = " + oroq );
+              // for(var i=2; i<=30; i++){
+              //   if(this["iftari"+i].getDate() == day){
+              //     var countDownDate = this["iftari"+i] ;
+              //     //console.log("For loop: "+this["iftari"+i]);
+              //     document.getElementById("iftariSot").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
+              //     console.log("nowLoop: " + day +" & cntDwn: "+ countDownDate.getDate());
+              //     var mbetja = 30 - i;
+              //     console.log("Iftari: "+this["iftari"+i] );
+              //     document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
+              //     break;
+              //   };
+              // };
+              // console.log("ifari: " + countDownDate );
+              // console.log("now: " + now);
+
+//var oroq = now.getTime() - countDownDate.getTime();
+//console.log("ifari - now = " + oroq );
 
 //console.log("test:" + iftarinewLocal.getHours());
 // document.getElementById("iftariSot").innerHTML = iftari2.getHours() + ":" + iftari2.getUTCMinutes();
@@ -67,14 +109,60 @@ console.log("ifari - now = " + oroq );
 
 // Update the count down every 1 second
 var x = setInterval(function() {
-
-
-  // Get today's date and time
-  
   now = new Date();
-  //console.log(now.getSeconds()); //po punon per merak
+
+
+  for(var i=2; i<=30; i++){
+    //console.log(now.getTime());
+    syfyriTemp = this["syfyri"+i].getTime();
+    iftariTemp = this["iftari"+i].getTime();
+    nowTemp = now.getTime();
   
-  var oroq = countDownDate.getTime() - now.getTime();
+  
+    //console.log("Syfyri "+ i + " : " +syfyriTemp );
+    //console.log("Iftari "+ i + " : " +iftariTemp );
+  
+    if(now < syfyriTemp){
+      countDownDate = syfyriTemp;
+      document.getElementById("syfyrApoIftar").innerHTML = "Syfyri: ";
+      document.getElementById("ora").innerHTML = this["syfyri"+i].getHours() + ":" + this["syfyri"+i].getMinutes();
+      var mbetja = 31 - i;
+      document.getElementById("ditetEMbetura").innerHTML =  mbetja;
+      break;
+    };
+    if(now < iftariTemp){
+      countDownDate = iftariTemp;
+      document.getElementById("syfyrApoIftar").innerHTML = "Iftari: ";
+      document.getElementById("ora").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
+      var mbetja = 30 - i;
+      document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
+      break;
+    }
+      // if(now.getTime() > this["syfyri"+i].getTime() && now.getTime() < this["iftari" + i].getTime()){
+      //   var countDownDate = this["iftari"+i];
+      //   //console.log("For loop: "+this["iftari"+i]);
+      //   document.getElementById("iftariSot").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
+      //   //console.log("nowLoop: " + day +" & cntDwn: "+ countDownDate.getDate());
+      
+      //   document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
+      //   break;
+      // };
+      // if(now.getTime() > this["iftari" + i].getTime() && now.getTime() < this["syfyri"+i+1].getTime()){
+      //   var countDownDate = this["syfyri"+i];
+      // }
+    };
+  
+
+
+
+
+
+
+
+
+
+  
+  var oroq = countDownDate - now.getTime();
   //console.log("ifari - now = " + oroq );
 
 
@@ -92,11 +180,11 @@ var x = setInterval(function() {
 
 
   // If the count down is finished, write some text
-  if (oroq < 0) {
-    // clearInterval(x); // kjo po e ndal "loopin"
-    document.getElementById("countDown").innerHTML = "IFTARI";
-    document.getElementById("ditetEMbetura").innerHTML = mbetja;
-  }
+  // if (oroq < 0) {
+  //   // clearInterval(x); // kjo po e ndal "loopin"
+  //   document.getElementById("countDown").innerHTML = "IFTARI";
+  //   document.getElementById("ditetEMbetura").innerHTML = mbetja;
+  // }
   //console.log(mbetja+1);
-  console.log("distanca: " + distance);
+  //console.log("distanca: " + distance);
 }, 1000);
