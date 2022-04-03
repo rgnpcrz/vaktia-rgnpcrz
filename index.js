@@ -38,12 +38,12 @@ var iftari30 = new Date(2022, 4,  1, 19, 44, 00);
 
 
 //syfyri
-var syfyri2  = new Date(2022, 3,  3, 4, 34, 00);
-var syfyri3  = new Date(2022, 3,  4, 4, 32, 00);
-var syfyri4  = new Date(2022, 3,  5, 4, 31, 00);
-var syfyri5  = new Date(2022, 3,  6, 4, 29, 00);
-var syfyri6  = new Date(2022, 3,  7, 4, 27, 00);
-var syfyri7  = new Date(2022, 3,  8, 4, 25, 00);
+var syfyri2  = new Date(2022, 3,  3, 4, 32, 00);
+var syfyri3  = new Date(2022, 3,  4, 4, 31, 00);
+var syfyri4  = new Date(2022, 3,  5, 4, 29, 00);
+var syfyri5  = new Date(2022, 3,  6, 4, 27, 00);
+var syfyri6  = new Date(2022, 3,  7, 4, 25, 00);
+var syfyri7  = new Date(2022, 3,  8, 4, 22, 00);
 var syfyri8  = new Date(2022, 3,  9, 4, 20, 00);
 var syfyri9  = new Date(2022, 3, 10, 4, 18, 00);
 var syfyri10 = new Date(2022, 3, 11, 4, 16, 00);
@@ -67,7 +67,6 @@ var syfyri27 = new Date(2022, 3, 28, 3, 41, 00);
 var syfyri28 = new Date(2022, 3, 29, 3, 39, 00);
 var syfyri29 = new Date(2022, 3, 30, 3, 37, 00);
 var syfyri30 = new Date(2022, 4,  1, 3, 35, 00);
-var syfyri31 = new Date(2022, 4,  1, 3, 33, 00);
 
 console.log("Qetash   : " + now.getTime());
 
