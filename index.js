@@ -8,7 +8,7 @@ var countDownDate = new Date();
 //var countDownDate = new Date("April 4, 2022 20:57:00").getTime();
 //console.log(countDownDate);
 
-var iftari2  = new Date(2022, 4,  3, 19, 12, 00);
+var iftari2  = new Date(2022, 4,  3, 20, 29, 00);
 var iftari3  = new Date(2022, 4,  4, 19, 13, 00);
 var iftari4  = new Date(2022, 4,  5, 19, 14, 00);
 var iftari5  = new Date(2022, 4,  6, 19, 15, 00);
@@ -56,8 +56,6 @@ for(var i=2; i<=30; i++){
 };
 console.log(mbetja);
 
-
-var newLocal = "2";
 //console.log("test:" + iftarinewLocal.getHours());
 // document.getElementById("iftariSot").innerHTML = iftari2.getHours() + ":" + iftari2.getUTCMinutes();
 
@@ -71,8 +69,10 @@ console.log(this["iftari"+i].getMinutes());
 // Update the count down every 1 second
 var x = setInterval(function() {
 
+
   // Get today's date and time
-  var now = new Date();
+  
+  now = new Date();
   //console.log(now.getSeconds()); //po punon per merak
 
   // Find the distance between now and the count down date
@@ -89,9 +89,11 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
-  if (distance < 0) {
+  if (distance < countDownDate) {
     clearInterval(x);
     document.getElementById("countDown").innerHTML = "IFTARI";
+    document.getElementById("ditetEMbetura").innerHTML = mbetja;
   }
-  console.log(mbetja+1);
+  //console.log(mbetja+1);
+  console.log("distanca: " + distance);
 }, 1000);
