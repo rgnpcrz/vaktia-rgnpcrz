@@ -63,10 +63,10 @@ body {
   }
   
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     body {
       text-align: center;
-      /* font-size: 2rem; */
+      font-size: 2rem;
       background-color: #FBF8F1;
       font-family: 'Bai Jamjuree', sans-serif;
     }
@@ -109,7 +109,7 @@ body {
       min-height: 20vh; */
     }
 
-  }
+  } */
 
   @media (min-width: 1200px) {
     body {
