@@ -23,6 +23,14 @@ body {
       padding-top: 70px;
   }
 
+  .edheSa{
+    font-size: 16px;
+    padding-top: 120px;
+    color: #BF9270;
+  }
+  span#ditetEMbetura{
+    font-weight: 600;
+  }
   p#countDown{
     font-size: 100px;
   }
