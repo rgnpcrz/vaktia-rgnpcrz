@@ -8,7 +8,7 @@ var countDownDate = new Date();
 //var countDownDate = new Date("April 4, 2022 20:57:00").getTime();
 //console.log(countDownDate);
 
-var iftari2  = new Date(2022, 4,  3, 20, 29, 00);
+var iftari2  = new Date(2022, 4,  3, 20, 40, 00);
 var iftari3  = new Date(2022, 4,  4, 19, 13, 00);
 var iftari4  = new Date(2022, 4,  5, 19, 14, 00);
 var iftari5  = new Date(2022, 4,  6, 19, 15, 00);
@@ -89,7 +89,7 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
-  if (distance < countDownDate) {
+  if (distance > countDownDate) {
     clearInterval(x);
     document.getElementById("countDown").innerHTML = "IFTARI";
     document.getElementById("ditetEMbetura").innerHTML = mbetja;
