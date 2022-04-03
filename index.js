@@ -1,8 +1,8 @@
-var now = new Date();
-var day = now.getDay();
+var now = new Date(2022, 4, 13, 02, 28, 00);
+var day = now.getDate();
 var countDownDate = new Date();
 
-console.log("now: " +day +" & cntDwn: "+countDownDate);
+console.log("now: " + day +" & cntDwn: "+ countDownDate.getDate());
 
 // Set the date we're counting down to
 //var countDownDate = new Date("April 4, 2022 20:57:00").getTime();
@@ -38,13 +38,18 @@ var iftari28 = new Date("April 29, 2022 19:41:00");
 var iftari29 = new Date("April 30, 2022 19:42:00");
 var iftari30    = new Date("May 1, 2022 19:43:00");
 
-console.log("dita ne databaz: "+ iftari2.getDay());
+console.log("now2: " + day +" & cntDwn: "+ now.getDay());
+console.log("data ne databaz: "+ iftari9.getDate());
 
 
-for(let i=2; i<=12; i++){
-  if(this["iftari"+i].getDay() == day){
+for(var i=2; i<=12; i++){
+  if(this["iftari"+i].getDate() == day){
     var countDownDate = this["iftari"+i] ;
     console.log("For loop: "+this["iftari"+i]);
+    document.getElementById("iftariSot").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
+    console.log("nowLoop: " + day +" & cntDwn: "+ countDownDate.getDate());
+
+    
     break;
   }
 };
@@ -53,7 +58,7 @@ for(let i=2; i<=12; i++){
 
 var newLocal = "2";
 //console.log("test:" + iftarinewLocal.getHours());
-document.getElementById("iftariSot").innerHTML = iftari2.getHours() + ":" + iftari2.getUTCMinutes();
+// document.getElementById("iftariSot").innerHTML = iftari2.getHours() + ":" + iftari2.getUTCMinutes();
 
 
 
