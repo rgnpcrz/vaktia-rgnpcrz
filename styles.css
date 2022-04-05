@@ -148,7 +148,7 @@ body {
     
     span#syfyrApoIftar{
         font-size: 25px;
-        font-weight: 600;
+        /* font-weight: 600; */
     }
   
     .countdown{
