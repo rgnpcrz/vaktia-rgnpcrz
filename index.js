@@ -71,40 +71,7 @@ var syfyri30 = new Date(2022, 4,  1, 3, 35, 00);
 console.log("Qetash   : " + now.getTime());
 
 
-// console.log("now2: " + day +" & cntDwn: "+ now.getDay());
-// console.log("data ne databaz: "+ iftari9.getDate());
 
-
-//console.log("ifari: " + countDownDate );
-//console.log("now: " + now);
-
-              // for(var i=2; i<=30; i++){
-              //   if(this["iftari"+i].getDate() == day){
-              //     var countDownDate = this["iftari"+i] ;
-              //     //console.log("For loop: "+this["iftari"+i]);
-              //     document.getElementById("iftariSot").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
-              //     console.log("nowLoop: " + day +" & cntDwn: "+ countDownDate.getDate());
-              //     var mbetja = 30 - i;
-              //     console.log("Iftari: "+this["iftari"+i] );
-              //     document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
-              //     break;
-              //   };
-              // };
-              // console.log("ifari: " + countDownDate );
-              // console.log("now: " + now);
-
-//var oroq = now.getTime() - countDownDate.getTime();
-//console.log("ifari - now = " + oroq );
-
-//console.log("test:" + iftarinewLocal.getHours());
-// document.getElementById("iftariSot").innerHTML = iftari2.getHours() + ":" + iftari2.getUTCMinutes();
-
-
-
-
-// for(var i=2;i<=12;i++){
-// console.log(this["iftari"+i].getMinutes());
-// };
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -117,9 +84,7 @@ var x = setInterval(function() {
     iftariTemp = this["iftari"+i].getTime();
     nowTemp = now.getTime();
   
-  
-    //console.log("Syfyri "+ i + " : " +syfyriTemp );
-    //console.log("Iftari "+ i + " : " +iftariTemp );
+
   
     if(now < syfyriTemp){
       countDownDate = syfyriTemp;
@@ -137,18 +102,7 @@ var x = setInterval(function() {
       document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
       break;
     }
-      // if(now.getTime() > this["syfyri"+i].getTime() && now.getTime() < this["iftari" + i].getTime()){
-      //   var countDownDate = this["iftari"+i];
-      //   //console.log("For loop: "+this["iftari"+i]);
-      //   document.getElementById("iftariSot").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
-      //   //console.log("nowLoop: " + day +" & cntDwn: "+ countDownDate.getDate());
-      
-      //   document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
-      //   break;
-      // };
-      // if(now.getTime() > this["iftari" + i].getTime() && now.getTime() < this["syfyri"+i+1].getTime()){
-      //   var countDownDate = this["syfyri"+i];
-      // }
+   
     };
   
 
@@ -158,7 +112,7 @@ var x = setInterval(function() {
 
 
 
-
+    console.log("Qetash_2   : " + now.getTime());
 
   
   var oroq = countDownDate - now.getTime();
