@@ -1,5 +1,5 @@
 var now = new Date();
-var day = now.getDate();
+
 var countDownDate = new Date();
 var syfyriTemp;
 var iftariTemp;
