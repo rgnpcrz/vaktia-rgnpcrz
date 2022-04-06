@@ -68,10 +68,6 @@ var syfyri28 = new Date(2022, 3, 29, 3, 39, 00);
 var syfyri29 = new Date(2022, 3, 30, 3, 37, 00);
 var syfyri30 = new Date(2022, 4,  1, 3, 35, 00);
 
-console.log("Qetash   : " + now.getTime());
-
-
-
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -104,15 +100,6 @@ var x = setInterval(function() {
     }
    
     };
-  
-
-
-
-
-
-
-
-    console.log("Qetash_2   : " + now.getTime());
 
   
   var oroq = countDownDate - now.getTime();
