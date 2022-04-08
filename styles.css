@@ -74,54 +74,6 @@ body {
   }
   
 
-  /* @media (min-width: 768px) {
-    body {
-      text-align: center;
-      font-size: 2rem;
-      background-color: #FBF8F1;
-      font-family: 'Bai Jamjuree', sans-serif;
-    }
-    
-    p{
-      font-size: 50px;
-      margin: 0;
-    }
-  
-    .detajet{
-        font-size: 22px;
-        padding-top: 50px;
-    }
-    
-    span#iftariSot{
-        font-size: 25px;
-        font-weight: 600;
-    }
-  
-    .countdown{
-      padding: 50px 0;
-    }
-    .containerWrapper{
-      padding-top: 0;
-    }
-    
-    h4 {
-      margin: 40px 0px 15px;
-      font-weight: 500;
-      color: #BF9270;
-    }
-    
-    footer{
-      position: fixed;
-      width: 100%;
-      padding: 30px 0px;
-      font-size: 20px;
-      background-color: white;
-      margin-top: 80px;
-      min-height: 20vh;
-    }
-
-  } */
-
   @media (min-width: 1200px) {
     body {
       margin: 0;
