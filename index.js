@@ -85,7 +85,11 @@ var x = setInterval(function() {
     if(now < syfyriTemp){
       countDownDate = syfyriTemp;
       document.getElementById("syfyrApoIftar").innerHTML = "Syfyri: ";
-      document.getElementById("ora").innerHTML = this["syfyri"+i].getHours() + ":" + this["syfyri"+i].getMinutes();
+      if(this["syfyri"+i].getMinutes() < 10){
+        document.getElementById("ora").innerHTML = this["syfyri"+i].getHours() + ":0" + this["syfyri"+i].getMinutes();
+      } else{
+        document.getElementById("ora").innerHTML = this["syfyri"+i].getHours() + ":" + this["syfyri"+i].getMinutes();  
+      }
       var mbetja = 31 - i;
       document.getElementById("ditetEMbetura").innerHTML =  mbetja;
       break;
@@ -93,7 +97,11 @@ var x = setInterval(function() {
     if(now < iftariTemp){
       countDownDate = iftariTemp;
       document.getElementById("syfyrApoIftar").innerHTML = "Iftari: ";
-      document.getElementById("ora").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
+      if(this["iftari"+i].getMinutes() < 10){
+        document.getElementById("ora").innerHTML = this["iftari"+i].getHours() + ":0" + this["iftari"+i].getMinutes();
+      }else{
+        document.getElementById("ora").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
+      }
       var mbetja = 30 - i;
       document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
       break;
