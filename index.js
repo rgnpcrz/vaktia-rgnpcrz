@@ -6,14 +6,14 @@ var iftariTemp;
 var nowTemp;
 
 //Iftari
-var iftari2  = new Date(2022, 3,  3, 19, 12, 00);
-var iftari3  = new Date(2022, 3,  4, 19, 13, 00);
-var iftari4  = new Date(2022, 3,  5, 19, 14, 00);
-var iftari5  = new Date(2022, 3,  6, 19, 15, 00);
-var iftari6  = new Date(2022, 3,  7, 19, 16, 00);
-var iftari7  = new Date(2022, 3,  8, 19, 17, 00);
-var iftari8  = new Date(2022, 3,  9, 19, 18, 00);
-var iftari9  = new Date(2022, 3, 10, 19, 20, 00);
+var iftari2 = new Date(2022, 3, 3, 19, 12, 00);
+var iftari3 = new Date(2022, 3, 4, 19, 13, 00);
+var iftari4 = new Date(2022, 3, 5, 19, 14, 00);
+var iftari5 = new Date(2022, 3, 6, 19, 15, 00);
+var iftari6 = new Date(2022, 3, 7, 19, 16, 00);
+var iftari7 = new Date(2022, 3, 8, 19, 17, 00);
+var iftari8 = new Date(2022, 3, 9, 19, 18, 00);
+var iftari9 = new Date(2022, 3, 10, 19, 20, 00);
 var iftari10 = new Date(2022, 3, 11, 19, 21, 00);
 var iftari11 = new Date(2022, 3, 12, 19, 22, 00);
 var iftari12 = new Date(2022, 3, 13, 19, 23, 00);
@@ -34,18 +34,17 @@ var iftari26 = new Date(2022, 3, 27, 19, 38, 00);
 var iftari27 = new Date(2022, 3, 28, 19, 40, 00);
 var iftari28 = new Date(2022, 3, 29, 19, 41, 00);
 var iftari29 = new Date(2022, 3, 30, 19, 42, 00);
-var iftari30 = new Date(2022, 4,  1, 19, 44, 00);
-
+var iftari30 = new Date(2022, 4, 1, 19, 44, 00);
 
 //syfyri
-var syfyri2  = new Date(2022, 3,  3, 4, 32, 00);
-var syfyri3  = new Date(2022, 3,  4, 4, 31, 00);
-var syfyri4  = new Date(2022, 3,  5, 4, 29, 00);
-var syfyri5  = new Date(2022, 3,  6, 4, 27, 00);
-var syfyri6  = new Date(2022, 3,  7, 4, 25, 00);
-var syfyri7  = new Date(2022, 3,  8, 4, 22, 00);
-var syfyri8  = new Date(2022, 3,  9, 4, 20, 00);
-var syfyri9  = new Date(2022, 3, 10, 4, 18, 00);
+var syfyri2 = new Date(2022, 3, 3, 4, 32, 00);
+var syfyri3 = new Date(2022, 3, 4, 4, 31, 00);
+var syfyri4 = new Date(2022, 3, 5, 4, 29, 00);
+var syfyri5 = new Date(2022, 3, 6, 4, 27, 00);
+var syfyri6 = new Date(2022, 3, 7, 4, 25, 00);
+var syfyri7 = new Date(2022, 3, 8, 4, 22, 00);
+var syfyri8 = new Date(2022, 3, 9, 4, 20, 00);
+var syfyri9 = new Date(2022, 3, 10, 4, 18, 00);
 var syfyri10 = new Date(2022, 3, 11, 4, 16, 00);
 var syfyri11 = new Date(2022, 3, 12, 4, 14, 00);
 var syfyri12 = new Date(2022, 3, 13, 4, 12, 00);
@@ -66,66 +65,67 @@ var syfyri26 = new Date(2022, 3, 27, 3, 43, 00);
 var syfyri27 = new Date(2022, 3, 28, 3, 41, 00);
 var syfyri28 = new Date(2022, 3, 29, 3, 39, 00);
 var syfyri29 = new Date(2022, 3, 30, 3, 37, 00);
-var syfyri30 = new Date(2022, 4,  1, 3, 35, 00);
-
+var syfyri30 = new Date(2022, 4, 1, 3, 35, 00);
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var x = setInterval(function () {
   now = new Date();
 
-
-  for(var i=2; i<=30; i++){
+  for (var i = 2; i <= 30; i++) {
     //console.log(now.getTime());
-    syfyriTemp = this["syfyri"+i].getTime();
-    iftariTemp = this["iftari"+i].getTime();
+    syfyriTemp = this["syfyri" + i].getTime();
+    iftariTemp = this["iftari" + i].getTime();
     nowTemp = now.getTime();
-  
 
-  
-    if(now < syfyriTemp){
+    if (now < syfyriTemp) {
       countDownDate = syfyriTemp;
       document.getElementById("syfyrApoIftar").innerHTML = "Syfyri: ";
-      if(this["syfyri"+i].getMinutes() <= 9){
-        document.getElementById("ora").innerHTML = this["syfyri"+i].getHours() + ":0" + this["syfyri"+i].getMinutes();
-      } else{
-        document.getElementById("ora").innerHTML = this["syfyri"+i].getHours() + ":" + this["syfyri"+i].getMinutes();  
+      if (this["syfyri" + i].getMinutes() <= 9) {
+        document.getElementById("ora").innerHTML =
+          this["syfyri" + i].getHours() +
+          ":0" +
+          this["syfyri" + i].getMinutes();
+      } else {
+        document.getElementById("ora").innerHTML =
+          this["syfyri" + i].getHours() + ":" + this["syfyri" + i].getMinutes();
       }
       var mbetja = 31 - i;
-      document.getElementById("ditetEMbetura").innerHTML =  mbetja;
+      document.getElementById("ditetEMbetura").innerHTML = mbetja;
       break;
-    };
-    if(now < iftariTemp){
+    } else if (now < iftariTemp) {
       countDownDate = iftariTemp;
       document.getElementById("syfyrApoIftar").innerHTML = "Iftari: ";
-      if(this["iftari"+i].getMinutes() <= 9){
-        document.getElementById("ora").innerHTML = this["iftari"+i].getHours() + ":0" + this["iftari"+i].getMinutes();
-      }else{
-        document.getElementById("ora").innerHTML = this["iftari"+i].getHours() + ":" + this["iftari"+i].getMinutes();
+      if (this["iftari" + i].getMinutes() <= 9) {
+        document.getElementById("ora").innerHTML =
+          this["iftari" + i].getHours() +
+          ":0" +
+          this["iftari" + i].getMinutes();
+      } else {
+        document.getElementById("ora").innerHTML =
+          this["iftari" + i].getHours() + ":" + this["iftari" + i].getMinutes();
       }
       var mbetja = 30 - i;
       document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
       break;
+    } else {
+      document.getElementById("ora").innerHTML = "Zoti kabull!";
     }
-   
-    };
+  }
 
-  
   var oroq = countDownDate - now.getTime();
   //console.log("ifari - now = " + oroq );
 
-
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
-  
+
   // Time calculations for days, hours, minutes and seconds
   var hours = Math.floor((oroq % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((oroq % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((oroq % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("countDown").innerHTML = hours + "h "
-  + minutes + "m " + seconds + "s ";
-
+  document.getElementById("countDown").innerHTML =
+    hours + "h " + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   // if (oroq < 0) {
