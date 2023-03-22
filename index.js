@@ -73,7 +73,7 @@ var syfyri30 = new Date(2023, 4, 1, 3, 35, 00);
 var x = setInterval(function () {
   now = new Date();
 
-  for (var i = 2; i <= 30; i++) {
+  for (var i = 1; i <= 30; i++) {
     //console.log(now.getTime());
     syfyriTemp = this["syfyri" + i].getTime();
     iftariTemp = this["iftari" + i].getTime();
@@ -118,7 +118,7 @@ var x = setInterval(function () {
   var seconds = Math.floor((oroq % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("countDown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+  document.getElementById("ora").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   // if (oroq < 0) {
