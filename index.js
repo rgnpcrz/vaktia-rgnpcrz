@@ -1,3 +1,5 @@
+const timezone = "Europe/Amsterdam";
+
 var now = new Date();
 
 var countDownDate = new Date();
@@ -106,7 +108,7 @@ var x = setInterval(function () {
     }
   }
 
-  var oroq = countDownDate - now.getTime();
+  var oroq = countDownDate - now.getTime() + 3600000;
   //console.log("ifari - now = " + oroq );
 
   // Find the distance between now and the count down date
@@ -118,7 +120,7 @@ var x = setInterval(function () {
   var seconds = Math.floor((oroq % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("ora").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+  document.getElementById("countDown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   // if (oroq < 0) {
