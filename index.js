@@ -77,7 +77,6 @@ var syfyri30 = new Date(2023, 4, 1, 3, 35, 00);
 // Update the count down every 1 second
 var x = setInterval(function () {
   now = new Date();
-  console.log(now);
 
   for (var i = 1; i <= 30; i++) {
     //console.log(now.getTime());
@@ -86,8 +85,8 @@ var x = setInterval(function () {
     nowTemp = now.getTime();
 
     if (now < syfyriTemp) {
-      console.log(nowTemp, syfyriTemp);
-      console.log("Syfyri1:", syfyri1);
+      // console.log(nowTemp, syfyriTemp);
+      // console.log("Syfyri1:", syfyri1);
       countDownDate = syfyriTemp;
       document.getElementById("syfyrApoIftar").innerHTML = "Syfyri: ";
       if (this["syfyri" + i].getMinutes() <= 9) {
@@ -99,8 +98,6 @@ var x = setInterval(function () {
       document.getElementById("ditetEMbetura").innerHTML = mbetja;
       break;
     } else if (now < iftariTemp) {
-      console.log("Iftari: ", nowTemp, iftariTemp);
-
       countDownDate = iftariTemp;
       document.getElementById("syfyrApoIftar").innerHTML = "Iftari: ";
       if (this["iftari" + i].getMinutes() <= 9) {
