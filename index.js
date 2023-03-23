@@ -8,11 +8,11 @@ var iftariTemp;
 var nowTemp;
 
 //Iftari
-var iftari1 = new Date(2023, 3, 23, 17, 59, 00);
-var iftari2 = new Date(2023, 3, 24, 18, 00, 00);
-var iftari3 = new Date(2023, 3, 25, 18, 02, 00);
-var iftari4 = new Date(2023, 3, 5, 19, 14, 00);
-var iftari5 = new Date(2023, 3, 6, 19, 15, 00);
+var iftari1 = new Date(2023, 2, 23, 17, 59, 00);
+var iftari2 = new Date(2023, 2, 24, 18, 00, 00);
+var iftari3 = new Date(2023, 2, 25, 18, 02, 00);
+var iftari4 = new Date(2023, 2, 5, 19, 14, 00);
+var iftari5 = new Date(2023, 2, 6, 19, 15, 00);
 var iftari6 = new Date(2023, 3, 7, 19, 16, 00);
 var iftari7 = new Date(2023, 3, 8, 19, 17, 00);
 var iftari8 = new Date(2023, 3, 9, 19, 18, 00);
@@ -40,15 +40,18 @@ var iftari29 = new Date(2023, 3, 30, 19, 42, 00);
 var iftari30 = new Date(2023, 4, 1, 19, 44, 00);
 
 //syfyri
-var syfyri1 = new Date(2023, 3, 23, 3, 55, 00);
-var syfyri2 = new Date(2023, 3, 24, 3, 53, 00);
-var syfyri3 = new Date(2023, 3, 25, 3, 51, 00);
-var syfyri4 = new Date(2023, 3, 5, 4, 29, 00);
-var syfyri5 = new Date(2023, 3, 6, 4, 27, 00);
-var syfyri6 = new Date(2023, 3, 7, 4, 25, 00);
-var syfyri7 = new Date(2023, 3, 8, 4, 22, 00);
-var syfyri8 = new Date(2023, 3, 9, 4, 20, 00);
-var syfyri9 = new Date(2023, 3, 10, 4, 18, 00);
+// Janari - 0
+// Shkurti -1
+// Marsi - 2
+var syfyri1 = new Date(2023, 2, 23, 3, 55, 00);
+var syfyri2 = new Date(2023, 2, 24, 3, 53, 00);
+var syfyri3 = new Date(2023, 2, 25, 3, 51, 00);
+var syfyri4 = new Date(2023, 2, 5, 4, 29, 00);
+var syfyri5 = new Date(2023, 2, 6, 4, 27, 00);
+var syfyri6 = new Date(2023, 2, 7, 4, 25, 00);
+var syfyri7 = new Date(2023, 2, 8, 4, 22, 00);
+var syfyri8 = new Date(2023, 2, 9, 4, 20, 00);
+var syfyri9 = new Date(2023, 2, 10, 4, 18, 00);
 var syfyri10 = new Date(2023, 3, 11, 4, 16, 00);
 var syfyri11 = new Date(2023, 3, 12, 4, 14, 00);
 var syfyri12 = new Date(2023, 3, 13, 4, 12, 00);
@@ -74,6 +77,7 @@ var syfyri30 = new Date(2023, 4, 1, 3, 35, 00);
 // Update the count down every 1 second
 var x = setInterval(function () {
   now = new Date();
+  console.log(now);
 
   for (var i = 1; i <= 30; i++) {
     //console.log(now.getTime());
@@ -82,6 +86,8 @@ var x = setInterval(function () {
     nowTemp = now.getTime();
 
     if (now < syfyriTemp) {
+      console.log(nowTemp, syfyriTemp);
+      console.log("Syfyri1:", syfyri1);
       countDownDate = syfyriTemp;
       document.getElementById("syfyrApoIftar").innerHTML = "Syfyri: ";
       if (this["syfyri" + i].getMinutes() <= 9) {
@@ -93,6 +99,8 @@ var x = setInterval(function () {
       document.getElementById("ditetEMbetura").innerHTML = mbetja;
       break;
     } else if (now < iftariTemp) {
+      console.log("Iftari: ", nowTemp, iftariTemp);
+
       countDownDate = iftariTemp;
       document.getElementById("syfyrApoIftar").innerHTML = "Iftari: ";
       if (this["iftari" + i].getMinutes() <= 9) {
@@ -108,7 +116,7 @@ var x = setInterval(function () {
     }
   }
 
-  var oroq = countDownDate - now.getTime() + 3600000;
+  var oroq = countDownDate - now.getTime();
   //console.log("ifari - now = " + oroq );
 
   // Find the distance between now and the count down date
