@@ -1,4 +1,6 @@
-const CACHE_NAME = "my-site-cache-v1";
+// const CACHE_NAME = "my-site-cache-v1";
+const CACHE_NAME = "vaktia_2024_kosove_0_0_1";
+
 const urlsToCache = ["/", "/index.html", "/index.js", "/vaktia2023", "/vaktia2023/index.html", "/vaktia2023/index.js"];
 
 self.addEventListener("install", function (event) {
