@@ -3,23 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Vaktia 2023</title>
+  <title>Vaktia 2024</title>
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="manifest" href="manifest.json">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap" rel="stylesheet">
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/vaktia2023/sw.js').then(function (registration) {
-          console.log('Service worker registered successfully');
-        }, function (err) {
-          console.error('Service worker registration failed: ', err);
-        });
-      });
-    }
-  </script>
+
 </head>
 
 <body>
@@ -32,10 +22,10 @@
       <div class="koha">
         <div class="countdown">
           <p class="detajet"><span id="syfyrApoIftar"></span><span id="ora">ㅤ</span></p>
-          <!-- <p class="detajet">Koha e mbetur:</p>
+          <p class="detajet">Koha e mbetur:</p>
           <p id="countDown">ㅤ</p>
-          <p class="edheSa">Ditët e mbetura: <span id="ditetEMbetura">ㅤ</span></p> -->
-          <p class="edheSa">Shifemi në Ramazanin e ardhshëm!<span id="ditetEMbetura">ㅤ</span></p>
+          <p class="edheSa">Ditët e mbetura: <span id="ditetEMbetura">ㅤ</span></p>
+          <!-- <p class="edheSa">Shifemi në Ramazanin e ardhshëm!<span id="ditetEMbetura">ㅤ</span></p> -->
         </div>
       </div>
     </div>
@@ -48,5 +38,16 @@
   </footer>
   <script src="index.js" charset="utf-8"></script>
 </body>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').then(function (registration) {
+        console.log('Service worker registered successfully');
+      }, function (err) {
+        console.error('Service worker registration failed: ', err);
+      });
+    });
+  }
+</script>
 
 </html>
