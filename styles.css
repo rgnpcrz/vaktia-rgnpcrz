@@ -1,139 +1,136 @@
-img{
+img {
   fill: white;
 }
 
 body {
   margin: 0;
   padding: 0;
-    text-align: center;
-    /* font-size: 2rem; */
-    background-color:white;
-    font-family: 'Bai Jamjuree', sans-serif;
-  }
-  
-  .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 85vh;
+  text-align: center;
+  /* font-size: 2rem; */
+  background-color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fbf8f1;
+}
+
+.containerWrapper {
+  padding-top: 50px;
+  margin: 0;
+}
+
+.detajet {
+  font-size: 50px;
+  padding-top: 80px;
+  margin: 0;
+}
+
+.dataAktuale {
+  font-size: 20px;
+}
+.edheSa {
+  font-size: 40px;
+  padding-top: 120px;
+  color: #bf9270;
+}
+span#ditetEMbetura {
+  font-weight: 600;
+}
+p#countDown {
+  font-size: 100px;
+  margin: 0;
+}
+span#ora {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.countdown {
+  padding: 50px 0;
+}
+
+h4 {
+  font-size: 50px;
+  margin: 10px 0px 15px;
+  font-weight: 500;
+  color: #bf9270;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 10vh;
+  width: 100%;
+  font-size: 15px;
+  background-color: white;
+  /* margin-top: 80px;
+    min-height: 20vh; */
+}
+
+@media (min-width: 1200px) {
+  body {
     margin: 0;
     padding: 0;
-    background-color: #FBF8F1;
+    text-align: center;
+    /* font-size: 2rem; */
+    background-color: white;
+    font-family: "Bai Jamjuree", sans-serif;
   }
-
-  .containerWrapper{
-    padding-top: 50PX;
+  .container {
+    padding: 0;
+    margin: 0;
+    background-color: #fbf8f1;
+  }
+  p {
+    font-size: 50px;
     margin: 0;
   }
 
-  .detajet{
-      font-size: 50px;
-      padding-top: 80px;
-      margin: 0;
+  .detajet {
+    font-size: 22px;
+    padding-top: 50px;
   }
 
-  .dataAktuale{
-    font-size: 20px;
-  }
-  .edheSa{
-    font-size: 40px;
-    padding-top: 120px;
-    color: #BF9270;
-  }
-  span#ditetEMbetura{
-    font-weight: 600;
-  }
-  p#countDown{
-    font-size: 100px;
-    margin: 0;
-  }
-  span#ora{
-      font-size: 60px;
-      font-weight: 600;
+  span#syfyrApoIftar {
+    font-size: 25px;
+    /* font-weight: 600; */
   }
 
-  .countdown{
+  .countdown {
     padding: 50px 0;
   }
-  
-  
-  h4 {
-    font-size: 50px;
-    margin: 10px 0px 15px;
-    font-weight: 500;
-    color: #BF9270;
+  .containerWrapper {
+    padding-top: 0;
   }
-  
-  .footerContainer{
+  span#ora {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  h4 {
+    margin: 40px 0px 15px;
+    font-weight: 500;
+    color: #bf9270;
+  }
+
+  .footerContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     height: 10vh;
     width: 100%;
-    font-size: 30px;
+    font-size: 15px;
     background-color: white;
     /* margin-top: 80px;
-    min-height: 20vh; */
-  }
-  
-
-  @media (min-width: 1200px) {
-    body {
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      /* font-size: 2rem; */
-      background-color: white;
-      font-family: 'Bai Jamjuree', sans-serif;
-    }
-    .container{
-      padding: 0;
-      margin: 0;
-      background-color: #FBF8F1;
-    }
-    p{
-      font-size: 50px;
-      margin: 0;
-    }
-  
-    .detajet{
-        font-size: 22px;
-        padding-top: 50px;
-    }
-    
-    span#syfyrApoIftar{
-        font-size: 25px;
-        /* font-weight: 600; */
-    }
-  
-    .countdown{
-      padding: 50px 0;
-    }
-    .containerWrapper{
-      padding-top: 0;
-    }
-    span#ora{
-      font-size: 40px;
-      font-weight: 600;
-  }
-    h4 {
-      margin: 40px 0px 15px;
-      font-weight: 500;
-      color: #BF9270;
-    }
-    
-    .footerContainer{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: auto;
-      height: 10vh;
-      width: 100%;
-      font-size: 15px;
-      background-color: white;
-      /* margin-top: 80px;
       min-height: 20vh; */
-    }
-
   }
+}
