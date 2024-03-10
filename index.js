@@ -43,6 +43,7 @@ var iftari30 = new Date(2024, 3, 9, 19, 18, 0);
 // Janari - 0
 // Shkurti -1
 // Marsi - 2
+// Prilli - 3
 var syfyri1 = new Date(2024, 2, 11, 4, 16, 0);
 var syfyri2 = new Date(2024, 2, 12, 4, 15, 0);
 var syfyri3 = new Date(2024, 2, 13, 4, 14, 0);
