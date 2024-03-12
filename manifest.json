@@ -1,6 +1,8 @@
 {
   "short_name": "Vaktia",
   "name": "Vaktia",
+  "description": "Koha aktuale e mbetur per iftar apo syfyr.",
+  "lang": "sq",
   "icons": [
     {
       "src": "favicon.ico",
@@ -16,9 +18,16 @@
       "src": "img/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/index.html",
+  "scope": "/vaktia-rgnpcrz/",
+  "orientation": "portrait",
   "display": "standalone",
   "theme_color": "#BF9270",
   "background_color": "#ffffff"
