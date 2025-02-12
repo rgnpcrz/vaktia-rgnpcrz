@@ -8,35 +8,35 @@ var iftariTemp;
 var nowTemp;
 
 // Iftari (Sunset) times for Ramadan 2025
-var iftari1 = new Date(2025, 2, 1, 17, 27, 0); // Mar 1, 2025
-var iftari2 = new Date(2025, 2, 2, 17, 29, 0);
-var iftari3 = new Date(2025, 2, 3, 17, 31, 0);
-var iftari4 = new Date(2025, 2, 4, 17, 33, 0);
-var iftari5 = new Date(2025, 2, 5, 17, 35, 0);
-var iftari6 = new Date(2025, 2, 6, 17, 37, 0);
-var iftari7 = new Date(2025, 2, 7, 17, 39, 0);
-var iftari8 = new Date(2025, 2, 8, 17, 41, 0);
+var iftari1 = new Date(2025, 2, 1, 17, 33, 0); // Mar 1, 2025
+var iftari2 = new Date(2025, 2, 2, 17, 34, 0);
+var iftari3 = new Date(2025, 2, 3, 17, 36, 0);
+var iftari4 = new Date(2025, 2, 4, 17, 37, 0);
+var iftari5 = new Date(2025, 2, 5, 17, 38, 0);
+var iftari6 = new Date(2025, 2, 6, 17, 39, 0);
+var iftari7 = new Date(2025, 2, 7, 17, 40, 0);
+var iftari8 = new Date(2025, 2, 8, 17, 42, 0);
 var iftari9 = new Date(2025, 2, 9, 17, 43, 0);
-var iftari10 = new Date(2025, 2, 10, 17, 45, 0);
-var iftari11 = new Date(2025, 2, 11, 17, 47, 0);
-var iftari12 = new Date(2025, 2, 12, 17, 49, 0);
-var iftari13 = new Date(2025, 2, 13, 17, 51, 0);
-var iftari14 = new Date(2025, 2, 14, 17, 53, 0);
-var iftari15 = new Date(2025, 2, 15, 17, 55, 0);
-var iftari16 = new Date(2025, 2, 16, 17, 57, 0);
-var iftari17 = new Date(2025, 2, 17, 17, 59, 0);
-var iftari18 = new Date(2025, 2, 18, 18, 1, 0);
-var iftari19 = new Date(2025, 2, 19, 18, 3, 0);
-var iftari20 = new Date(2025, 2, 20, 18, 5, 0);
-var iftari21 = new Date(2025, 2, 21, 18, 7, 0);
-var iftari22 = new Date(2025, 2, 22, 18, 9, 0);
-var iftari23 = new Date(2025, 2, 23, 18, 11, 0);
-var iftari24 = new Date(2025, 2, 24, 18, 13, 0);
-var iftari25 = new Date(2025, 2, 25, 18, 15, 0);
-var iftari26 = new Date(2025, 2, 26, 18, 17, 0);
-var iftari27 = new Date(2025, 2, 27, 18, 19, 0);
-var iftari28 = new Date(2025, 2, 28, 18, 21, 0);
-var iftari29 = new Date(2025, 2, 29, 18, 23, 0);
+var iftari10 = new Date(2025, 2, 10, 17, 44, 0);
+var iftari11 = new Date(2025, 2, 11, 17, 45, 0);
+var iftari12 = new Date(2025, 2, 12, 17, 47, 0);
+var iftari13 = new Date(2025, 2, 13, 17, 48, 0);
+var iftari14 = new Date(2025, 2, 14, 17, 49, 0);
+var iftari15 = new Date(2025, 2, 15, 17, 50, 0);
+var iftari16 = new Date(2025, 2, 16, 17, 51, 0);
+var iftari17 = new Date(2025, 2, 17, 17, 52, 0);
+var iftari18 = new Date(2025, 2, 18, 17, 53, 0);
+var iftari19 = new Date(2025, 2, 19, 17, 55, 0);
+var iftari20 = new Date(2025, 2, 20, 17, 56, 0);
+var iftari21 = new Date(2025, 2, 21, 17, 57, 0);
+var iftari22 = new Date(2025, 2, 22, 17, 58, 0);
+var iftari23 = new Date(2025, 2, 23, 17, 59, 0);
+var iftari24 = new Date(2025, 2, 24, 18, 0, 0);
+var iftari25 = new Date(2025, 2, 25, 18, 2, 0);
+var iftari26 = new Date(2025, 2, 26, 18, 3, 0);
+var iftari27 = new Date(2025, 2, 27, 18, 4, 0);
+var iftari28 = new Date(2025, 2, 28, 18, 5, 0);
+var iftari29 = new Date(2025, 2, 29, 18, 6, 0);
 // var iftari30 = new Date(2025, 2, 29, 18, 23, 0);
 
 // Syfyri (Sunrise) times for Ramadan 2025
