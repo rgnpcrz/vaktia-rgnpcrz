@@ -95,7 +95,7 @@ var x = setInterval(function () {
       } else {
         document.getElementById("ora").innerHTML = this["syfyri" + i].getHours() + ":" + this["syfyri" + i].getMinutes();
       }
-      var mbetja = 31 - i;
+      var mbetja = 30 - i;
       document.getElementById("ditetEMbetura").innerHTML = mbetja;
       break;
     } else if (now < iftariTemp) {
@@ -106,7 +106,7 @@ var x = setInterval(function () {
       } else {
         document.getElementById("ora").innerHTML = this["iftari" + i].getHours() + ":" + this["iftari" + i].getMinutes();
       }
-      var mbetja = 30 - i;
+      var mbetja = 29 - i;
       document.getElementById("ditetEMbetura").innerHTML = "Sot + " + mbetja;
       break;
     } else {
