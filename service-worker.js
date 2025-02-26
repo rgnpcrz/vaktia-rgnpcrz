@@ -1,10 +1,14 @@
-const CACHE_NAME = "vaktia_2025_kosove_1_0_2";
+const CACHE_NAME = "vaktia_2025_kosove_1_0_3";
 const urlsToCache = [
   "/vaktia-rgnpcrz/", // Root path
   "/vaktia-rgnpcrz/index.html",
   "/vaktia-rgnpcrz/styles.css",
   "/vaktia-rgnpcrz/index2025.js",
+  "/vaktia-rgnpcrz/img/favicon.ico",
   "/vaktia-rgnpcrz/img/favicon.png",
+  "/vaktia-rgnpcrz/img/apple-touch-icon.png", // Apple Touch Icon
+  "/vaktia-rgnpcrz/img/icon-192x192.png", // PWA Icon
+  "/vaktia-rgnpcrz/img/icon-512x512.png", // PWA Icon
   "/vaktia-rgnpcrz/manifest2.json",
   "https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap",
 ];
