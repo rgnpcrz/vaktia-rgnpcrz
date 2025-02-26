@@ -1,4 +1,4 @@
-const CACHE_NAME = "vaktia_2025_kosove_3_0_4";
+const CACHE_NAME = "vaktia_2025_kosove_3_0_7";
 const urlsToCache = [
   "/vaktia-rgnpcrz/", // Root path
   "/vaktia-rgnpcrz/index.html",
