@@ -15,11 +15,25 @@ const urlsToCache = [
 ];
 
 // Install the service worker
+// self.addEventListener("install", function (event) {
+//   event.waitUntil(
+//     caches.open(CACHE_NAME).then(function (cache) {
+//       console.log("Opened cache");
+//       return cache.addAll(urlsToCache);
+//     })
+//   );
+// });
 self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       console.log("Opened cache");
-      return cache.addAll(urlsToCache);
+      return Promise.all(
+        urlsToCache.map(function (url) {
+          return cache.add(url).catch(function (error) {
+            console.error("Failed to cache:", url, error);
+          });
+        })
+      );
     })
   );
 });
