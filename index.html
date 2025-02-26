@@ -49,5 +49,22 @@
     });
   }
 </script>
+<script>
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    const installButton = document.createElement('button');
+    installButton.textContent = 'Install App';
+    installButton.style.position = 'fixed';
+    installButton.style.bottom = '20px';
+    installButton.style.right = '20px';
+    installButton.style.zIndex = '1000';
+    document.body.appendChild(installButton);
+
+    installButton.addEventListener('click', () => {
+      event.prompt();
+      installButton.style.display = 'none';
+    });
+  });
+</script>
 
 </html>
