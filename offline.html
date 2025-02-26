@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="theme-color" content="#BF9270">
+  <title>Vaktia 2025</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/vaktia-rgnpcrz/img/favicon.ico">
+  <link rel="icon" type="image/png" href="/vaktia-rgnpcrz/img/favicon.png">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/vaktia-rgnpcrz/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/vaktia-rgnpcrz/img/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/vaktia-rgnpcrz/img/icon-512x512.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/vaktia-rgnpcrz/styles.css">
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/vaktia-rgnpcrz/manifest2.json">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="containerWrapper">
+      <div class="titulli">
+        <!-- <h3>Kosovë 2023</h3> -->
+        <h4>Vaktia e Ramazanit</h4>
+      </div>
+      <div class="koha">
+        <div class="countdown">
+          <p class="detajet"><span id="syfyrApoIftar"></span><span id="ora">ㅤ</span></p>
+          <p class="detajet">Koha e mbetur:</p>
+          <p id="countDown">ㅤ</p>
+          <p class="edheSa">Ditët e mbetura: <span id="ditetEMbetura">ㅤ</span></p>
+          <!-- <p class="edheSa">Shifemi në Ramazanin e ardhshëm!<span id="ditetEMbetura">ㅤ</span></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footerContainer">
+      Made with ❤️ by skriptura
+      <!-- <p class="dataAktuale">dd/mm/yyyy</p> -->
+    </div>
+  </footer>
+  <script src="index2025.js" charset="utf-8"></script>
+</body>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+        console.log('Service worker registered successfully');
+      }, function (err) {
+        console.error('Service worker registration failed: ', err);
+      });
+    });
+  }
+</script>
+<script>
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    const installButton = document.createElement('button');
+    installButton.textContent = 'Instalo Aplikacionin';
+    installButton.style.position = 'fixed';
+    installButton.style.bottom = '20px';
+    installButton.style.left = '20px';
+    installButton.style.right = '20px';
+    installButton.style.paddingTop = '20px';
+    installButton.style.paddingBottom = '20px';
+    installButton.style.fontSize = '18px';
+
+    installButton.style.zIndex = '1000';
+    document.body.appendChild(installButton);
+
+    installButton.addEventListener('click', () => {
+      event.prompt();
+      installButton.style.display = 'none';
+    });
+  });
+</script>
+
+</html>
