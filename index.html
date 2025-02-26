@@ -69,10 +69,15 @@
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     const installButton = document.createElement('button');
-    installButton.textContent = 'Install App';
+    installButton.textContent = 'Instalo Aplikacionin';
     installButton.style.position = 'fixed';
     installButton.style.bottom = '20px';
+    installButton.style.left = '20px';
     installButton.style.right = '20px';
+    installButton.style.paddingTop = '15px';
+    installButton.style.paddingBottom = '15px';
+    installButton.style.fontSize = '18px';
+
     installButton.style.zIndex = '1000';
     document.body.appendChild(installButton);
 
