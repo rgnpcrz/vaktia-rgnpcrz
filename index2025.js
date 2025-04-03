@@ -37,7 +37,7 @@ var iftari26 = new Date(2025, 2, 26, 18, 3, 0);
 var iftari27 = new Date(2025, 2, 27, 18, 4, 0);
 var iftari28 = new Date(2025, 2, 28, 18, 5, 0);
 var iftari29 = new Date(2025, 2, 29, 18, 6, 0);
-// var iftari30 = new Date(2025, 2, 29, 18, 23, 0);
+var iftari30 = new Date(2025, 2, 29, 18, 23, 0);
 
 // Syfyri (Sunrise) times for Ramadan 2025
 // Janari - 0
@@ -73,13 +73,13 @@ var syfyri26 = new Date(2025, 2, 26, 3, 49, 0);
 var syfyri27 = new Date(2025, 2, 27, 3, 46, 0);
 var syfyri28 = new Date(2025, 2, 28, 3, 44, 0);
 var syfyri29 = new Date(2025, 2, 29, 3, 41, 0);
-// var syfyri30 = new Date(2025, 2, 29, 4, 47, 0);
+var syfyri30 = new Date(2026, 1, 17, 6, 0, 0); // Next years Ramazan estimate sunrise
 
 // Update the count down every 1 second
 var x = setInterval(function () {
   now = new Date();
 
-  for (var i = 1; i <= 29; i++) {
+  for (var i = 1; i <= 30; i++) {
     // console.log(now);
     syfyriTemp = this["syfyri" + i].getTime();
     iftariTemp = this["iftari" + i].getTime();
