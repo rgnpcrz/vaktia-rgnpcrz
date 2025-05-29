@@ -128,7 +128,7 @@ var x = setInterval(function () {
 
   // Display the result in the element with id="demo"
   if (days > 0) {
-    document.getElementById("countDown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("countDown").innerHTML = days + "d " + hours + "h " + minutes + "m ";
   } else {
     document.getElementById("countDown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
   }
