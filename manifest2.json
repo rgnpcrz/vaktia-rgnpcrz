@@ -23,8 +23,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/vaktia-rgnpcrz/",
-  "scope": "/vaktia-rgnpcrz/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "theme_color": "#BF9270",
   "background_color": "#ffffff"

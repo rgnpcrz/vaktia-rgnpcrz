@@ -1,17 +1,19 @@
 // const CACHE_NAME = "vaktia_2025_kosove_3_0_7";
-const CACHE_NAME = "vaktia_2025_kosove_3_0_8";
+// const CACHE_NAME = "vaktia_2025_kosove_3_0_8";
+const CACHE_NAME = "vaktia_2026_kosove_3_1_0";
 const urlsToCache = [
-  "/vaktia-rgnpcrz/", // Root path
-  "/vaktia-rgnpcrz/index.html",
-  "/vaktia-rgnpcrz/offline.html",
-  "/vaktia-rgnpcrz/styles.css",
-  "/vaktia-rgnpcrz/index2025.js",
-  "/vaktia-rgnpcrz/img/favicon.ico",
-  "/vaktia-rgnpcrz/img/favicon.png",
-  "/vaktia-rgnpcrz/img/apple-touch-icon.png", // Apple Touch Icon
-  "/vaktia-rgnpcrz/img/icon-192x192.png", // PWA Icon
-  "/vaktia-rgnpcrz/img/icon-512x512.png", // PWA Icon
-  "/vaktia-rgnpcrz/manifest2.json",
+  "/", // Root path
+  "/index.html",
+  "/offline.html",
+  "/styles.css",
+  "/index2025.js",
+  "/index2026.js",
+  "/img/favicon.ico",
+  "/img/favicon.png",
+  "/img/apple-touch-icon.png", // Apple Touch Icon
+  "/img/icon-192x192.png", // PWA Icon
+  "/img/icon-512x512.png", // PWA Icon
+  "/manifest2.json",
   "https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap",
 ];
 
@@ -69,7 +71,7 @@ self.addEventListener("fetch", function (event) {
       })
       .catch(function () {
         // If both cache and network fail, show a generic fallback
-        return caches.match("/vaktia-rgnpcrz/offline.html"); // Offline fallback page
+        return caches.match("/offline.html"); // Offline fallback page
       })
   );
 });

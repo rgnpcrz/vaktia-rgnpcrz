@@ -2,7 +2,7 @@
 const CACHE_NAME = "vaktia_2024_kosove_0_0_1";
 
 // const urlsToCache = ["/", "/index.html", "/index2024.js", "/vaktia2023", "/vaktia2023/index.html", "/vaktia2023/index2024.js"];
-const urlsToCache = ["/vaktia-rgnpcrz", "/vaktia-rgnpcrz/index.html", "/vaktia-rgnpcrz/index2024.js"];
+const urlsToCache = ["/vaktia-rgnpcrz", "/index.html", "/index2024.js"];
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
